@@ -20,6 +20,7 @@ func Init() *echo.Echo {
 
 	e.GET("/customer", controllers.GetAllCustomer)
 	e.POST("/customer", controllers.AddCustomers)
+	e.POST("/test", controllers.BindJSON)
 
 	return e
 }
